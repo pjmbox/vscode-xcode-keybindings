@@ -2,6 +2,19 @@
 
 This extension ports popular Xcode keyboard shortcuts to Visual Studio Code. After installing the extension and restarting VS Code your favorite keyboard shortcuts from Xcode are now available. 
 
+## Fork Notes
+
+This fork is from 'https://github.com/stevemoser/vscode-xcode-keybindings'. The target is to add key bindings for win and linux. In win and linux, the key ctrl and win/super should be exchanged.
+
+## Key Mappings
+
+| mac | win | linux |
+|-----|-----|-------|
+| cmd | ctrl | ctrl |
+| ctrl | win | super |
+| opt | alt | alt |
+| shift | shift | shift |
+
 ## What keyboard shortcuts are included?
 
 You can see all the keyboard shortcuts in the extension's contribution list. 
