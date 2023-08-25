@@ -1,10 +1,10 @@
 {
-    "name": "xcode-keybindings",
-    "displayName": "Xcode Keymap",
-    "description": "Popular Xcode keybindings for VS Code.",
-    "version": "1.9.0",
-    "publisher": "stevemoser",
-    "homepage": "https://github.com/stevemoser/vscode-xcode-keybindings/#readme",
+    "name": "xcode-keybindings-mac-win-linux",
+    "displayName": "Xcode Keymap for Mac Win Linux",
+    "description": "Popular Xcode keybindings for VS Code for Mac Win Linux.",
+    "version": "2.0.0",
+    "publisher": "pjmbox",
+    "homepage": "https://github.com/pjmbox/vscode-xcode-keybindings/#readme",
     "engines": {
         "vscode": "^1.6.0"
     },
@@ -22,180 +22,293 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/stevemoser/vscode-xcode-keybindings.git"
+        "url": "https://github.com/pjmbox/vscode-xcode-keybindings.git"
     },
     "bugs": {
-        "url": "https://github.com/stevemoser/vscode-xcode-keybindings/issues"
+        "url": "https://github.com/pjmbox/vscode-xcode-keybindings/issues"
     },
     "preview": true,
     "icon": "xcode-keyboard.png",
     "contributes": {
         "keybindings": [
 			{
+				"mac": "cmd+e",
+				"win": "ctrl+e",
+				"linux": "ctrl+e",
 				"key": "cmd+e",
 				"command": "editor.action.addSelectionToNextFindMatch"
 			},         
 			{
+				"mac": "cmd+shift+j",
+				"win": "ctrl+shift+j",
+				"linux": "ctrl+shift+j",
 				"key": "cmd+shift+j",
 				"command": "workbench.files.action.showActiveFileInExplorer"
 			},            
 			{
+				"mac": "cmd+ctrl+up",
+				"win": "ctrl+win+up",
+				"linux": "ctrl+super+up",
 				"key": "cmd+ctrl+up",
 				"command": "C_Cpp.SwitchHeaderSource"
 			},            
             {
+                "mac": "shift+cmd+]",
+                "win": "shift+ctrl+]",
+                "linux": "shift+ctrl+]",
                 "key": "shift+cmd+]",
                 "command": "workbench.action.nextEditor"
             },
             {
+                "mac": "shift+cmd+[",
+                "win": "shift+ctrl+[",
+                "linux": "shift+ctrl+[",
                 "key": "shift+cmd+[",
                 "command": "workbench.action.previousEditor"
             },
             {
+                "mac": "cmd+shift+y",
+                "win": "ctrl+shift+y",
+                "linux": "ctrl+shift+y",
                 "key": "cmd+shift+y",
                 "command": "workbench.action.togglePanel"
             },
             {
+                "mac": "cmd+shift+o",
+                "win": "ctrl+shift+o",
+                "linux": "ctrl+shift+o",
                 "key": "cmd+shift+o",
                 "command": "workbench.action.quickOpen"
             },
             {
-                "key": "ctrl+cmd+left",
+                "mac": "ctrl+cmd+left",
+                "mac": "win+ctrl+left",
+                "key": "super+ctrl+left",
                 "command": "workbench.action.navigateBack"
             },
             {
+                "mac": "ctrl+cmd+right",
+                "win": "win+ctrl+right",
+                "linux": "super+ctrl+right",
                 "key": "ctrl+cmd+right",
                 "command": "workbench.action.navigateForward"
             },
             {
+                "mac": "cmd+1",
+                "win": "ctrl+1",
+                "linux": "ctrl+1",
                 "key": "cmd+1",
                 "command": "workbench.view.explorer"
             },
             {
+                "mac": "cmd+2",
+                "win": "ctrl+2",
+                "linux": "ctrl+2",
                 "key": "cmd+2",
                 "command": "workbench.view.search"
             },
             {
+                "mac": "cmd+3",
+                "win": "ctrl+3",
+                "linux": "ctrl+3",
                 "key": "cmd+3",
                 "command": "workbench.view.scm"
             },
             {
+                "mac": "cmd+4",
+                "win": "ctrl+4",
+                "linux": "ctrl+4",
                 "key": "cmd+4",
                 "command": "workbench.view.debug"
             },
             {
+                "mac": "cmd+5",
+                "win": "ctrl+5",
+                "linux": "ctrl+5",
                 "key": "cmd+5",
                 "command": "workbench.view.extensions"
             },
             {
+                "mac": "cmd+r",
+                "win": "ctrl+r",
+                "linux": "ctrl+r",
                 "key": "cmd+r",
                 "command": "workbench.action.debug.start",
                 "when": "!inDebugMode"
             },
             {
+                "mac": "cmd+r",
+                "win": "ctrl+r",
+                "linux": "ctrl+r",
                 "key": "cmd+r",
                 "command": "workbench.action.debug.restart",
                 "when": "inDebugMode"
             },
             {
+                "mac": "cmd+.",
+                "win": "ctrl+.",
+                "linux": "ctrl+.",
                 "key": "cmd+.",
                 "command": "workbench.action.debug.stop",
                 "when": "inDebugMode"
             },
             {
+                "mac": "cmd+b",
+                "win": "ctrl+b",
+                "linux": "ctrl+b",
                 "key": "cmd+b",
                 "command": "workbench.action.tasks.build"
             },
             {
+                "mac": "cmd+u",
+                "win": "ctrl+u",
+                "linux": "ctrl+u",
                 "key": "cmd+u",
                 "command": "workbench.action.tasks.test"
             },
             {
+                "mac": "cmd+0",
+                "win": "ctrl+0",
+                "linux": "ctrl+0",
                 "key": "cmd+0",
                 "command": "workbench.action.toggleSidebarVisibility"
             },
             {
+                "mac": "ctrl+right",
+                "win": "win+right",
+                "linux": "super+right",
                 "key": "ctrl+right",
                 "command": "cursorWordPartRight",
                 "when": "textInputFocus"
             },
             {
+                "mac": "shift+ctrl+right",
+                "win": "shift+win+right",
+                "linux": "shift+super+right",
                 "key": "shift+ctrl+right",
                 "command": "cursorWordPartRightSelect",
                 "when": "textInputFocus"
             },
             {
+                "mac": "ctrl+left",
+                "win": "win+left",
+                "linux": "super+left",
                 "key": "ctrl+left",
                 "command": "cursorWordPartStartLeft",
                 "when": "textInputFocus"
             },
             {
+                "mac": "shift+ctrl+left",
+                "win": "shift+win+left",
+                "linux": "shift+super+left",
                 "key": "shift+ctrl+left",
                 "command": "cursorWordPartStartLeftSelect",
                 "when": "textInputFocus"
             },
             {
+                "mac": "ctrl+backspace",
+                "win": "win+backspace",
+                "linux": "super+backspace",
                 "key": "ctrl+backspace",
                 "command": "deleteWordPartLeft",
                 "when": "textInputFocus && !editorReadonly"
             },
             {
+                "mac": "shift+ctrl+backspace",
+                "win": "shift+win+backspace",
+                "linux": "shift+super+backspace",
                 "key": "shift+ctrl+backspace",
                 "command": "deleteWordPartRight",
                 "when": "textInputFocus && !editorReadonly"
             },
             {
+                "mac": "alt+cmd+left",
+                "win": "alt+ctrl+left",
+                "linux": "alt+ctrl+left",
                 "key": "alt+cmd+left",
                 "command": "editor.fold"
             },
             {
+                "mac": "alt+cmd+right",
+                "mac": "alt+ctrl+right",
+                "linux": "alt+ctrl+right",
                 "key": "alt+cmd+right",
                 "command": "editor.unfold"
             },
             {
+                "mac": "alt+cmd+[",
+                "win": "alt+ctrl+[",
+                "linux": "alt+ctrl+[",
                 "key": "alt+cmd+[",
                 "command": "editor.action.moveLinesUpAction"
             },
             {
+                "mac": "alt+cmd+]",
+                "win": "alt+ctrl+]",
+                "linux": "alt+ctrl+]",
                 "key": "alt+cmd+]",
                 "command": "editor.action.moveLinesDownAction"
             },
             {
+                "mac": "alt+up",
+                "win": "alt+up",
+                "linux": "alt+up",
                 "key": "alt+up",
                 "command": "cursorHome",
                 "when": "textInputFocus"
             },
             {
+                "mac": "alt+down",
+                "win": "alt+down",
+                "linux": "alt+down",
                 "key": "alt+down",
                 "command": "cursorEnd",
                 "when": "textInputFocus"
             },
             {
+                "mac": "ctrl+cmd+e",
+                "win": "win+ctrl+e",
+                "linux": "super+ctrl+e",
                 "key": "ctrl+cmd+e",
                 "command": "editor.action.changeAll",
                 "when": "editorTextFocus && !editorReadonly"
             },
             {
+                "mac": "enter",
+                "win": "enter",
+                "linux": "enter",
                 "key": "enter",
                 "command": "acceptSelectedSuggestion",
                 "when": "editorTextFocus && suggestWidgetVisible"
             },
             {
+                "mac": "ctrl+shift+up",
+                "win": "win+shift+up",
+                "linux": "super+shift+up",
                 "key": "ctrl+shift+up",
                 "command": "editor.action.insertCursorAbove",
                 "when": "editorTextFocus"
             },
             {
+                "mac": "ctrl+shift+down",
+                "win": "win+shift+down",
+                "linux": "super+shift+down",
                 "key": "ctrl+shift+down",
                 "command": "editor.action.insertCursorBelow",
                 "when": "editorTextFocus"
             },
             {
+                "mac": "cmd+l",
+                "win": "ctrl+l",
+                "linux": "ctrl+l",
                 "key": "cmd+l",
                 "command": "workbench.action.gotoLine",
                 "when": "textInputFocus"
             },
             {
+                "mac": "cmd+d",
+                "win": "ctrl+d",
+                "linux": "ctrl+d",
                 "key": "cmd+d",
                 "command": "editor.action.duplicateSelection",
                 "when": "editorTextFocus"
