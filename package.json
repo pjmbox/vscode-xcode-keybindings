@@ -2,7 +2,7 @@
     "name": "xcode-keybindings-mac-win-linux",
     "displayName": "Xcode Keymap for Mac Win Linux",
     "description": "Popular Xcode keybindings for VS Code for Mac Win Linux.",
-    "version": "2.1.2",
+    "version": "2.1.3",
     "publisher": "pjmbox",
     "homepage": "https://github.com/pjmbox/vscode-xcode-keybindings/#readme",
     "engines": {
