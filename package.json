@@ -31,27 +31,27 @@
     "icon": "xcode-keyboard.png",
     "contributes": {
         "keybindings": [
-			{
-				"mac": "cmd+e",
-				"win": "ctrl+e",
-				"linux": "ctrl+e",
-				"key": "cmd+e",
-				"command": "editor.action.addSelectionToNextFindMatch"
-			},         
-			{
-				"mac": "cmd+shift+j",
-				"win": "ctrl+shift+j",
-				"linux": "ctrl+shift+j",
-				"key": "cmd+shift+j",
-				"command": "workbench.files.action.showActiveFileInExplorer"
-			},            
-			{
-				"mac": "cmd+ctrl+up",
-				"win": "ctrl+win+up",
-				"linux": "ctrl+super+up",
-				"key": "cmd+ctrl+up",
-				"command": "C_Cpp.SwitchHeaderSource"
-			},            
+            {
+                "mac": "cmd+e",
+                "win": "ctrl+e",
+                "linux": "ctrl+e",
+                "key": "cmd+e",
+                "command": "editor.action.addSelectionToNextFindMatch"
+            },
+            {
+                "mac": "cmd+shift+j",
+                "win": "ctrl+shift+j",
+                "linux": "ctrl+shift+j",
+                "key": "cmd+shift+j",
+                "command": "workbench.files.action.showActiveFileInExplorer"
+            },
+            {
+                "mac": "cmd+ctrl+up",
+                "win": "ctrl+win+up",
+                "linux": "ctrl+super+up",
+                "key": "cmd+ctrl+up",
+                "command": "C_Cpp.SwitchHeaderSource"
+            },
             {
                 "mac": "shift+cmd+]",
                 "win": "shift+ctrl+]",
@@ -81,7 +81,6 @@
                 "command": "workbench.action.quickOpen"
             },
             {
-                "mac": "ctrl+cmd+left",
                 "mac": "win+ctrl+left",
                 "key": "super+ctrl+left",
                 "command": "workbench.action.navigateBack"
@@ -229,7 +228,6 @@
                 "command": "editor.fold"
             },
             {
-                "mac": "alt+cmd+right",
                 "mac": "alt+ctrl+right",
                 "linux": "alt+ctrl+right",
                 "key": "alt+cmd+right",
@@ -312,16 +310,25 @@
                 "key": "cmd+d",
                 "command": "editor.action.duplicateSelection",
                 "when": "editorTextFocus"
+            },
+            {
+                "mac": "cmd+`",
+                "win": "ctrl+`",
+                "linux": "ctrl+`",
+                "key": "cmd+`",
+                "command": "workbench.action.terminal.newWithCmd",
+                "args": {
+                    "cwd": "${fileDirName}"
+                }
             }
         ]
     },
-    "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install"
-    },
+    "scripts": {},
     "devDependencies": {
         "vscode": "^1.0.0"
     },
     "dependencies": {
+        "@types/vscode": "^1.81.0",
         "jsonfile": "^5.0.0"
     }
 }
