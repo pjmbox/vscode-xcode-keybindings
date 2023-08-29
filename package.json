@@ -2,7 +2,7 @@
     "name": "xcode-keybindings-mac-win-linux",
     "displayName": "Xcode Keymap for Mac Win Linux",
     "description": "Popular Xcode keybindings for VS Code for Mac Win Linux.",
-    "version": "2.1.1",
+    "version": "2.1.2",
     "publisher": "pjmbox",
     "homepage": "https://github.com/pjmbox/vscode-xcode-keybindings/#readme",
     "engines": {
@@ -318,7 +318,7 @@
                 "key": "cmd+`",
                 "command": "workbench.action.terminal.newWithCwd",
                 "args": {
-                    "cwd": "${fileDirName}"
+                    "cwd": "${fileDirname}"
                 }
             }
         ]
