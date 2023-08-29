@@ -316,7 +316,7 @@
                 "win": "ctrl+`",
                 "linux": "ctrl+`",
                 "key": "cmd+`",
-                "command": "workbench.action.terminal.newWithCmd",
+                "command": "workbench.action.terminal.newWithCwd",
                 "args": {
                     "cwd": "${fileDirName}"
                 }
